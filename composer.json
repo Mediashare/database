@@ -1,0 +1,21 @@
+{
+    "name": "kzu/database",
+    "type": "library",
+    "license": "AGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "MarquandT",
+            "email": "thibault@marquand.pro"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "kzu/normalizer": "*",
+        "kzu/filesystem": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kzu\\Database\\": "src/"
+        }
+    }
+}

@@ -98,7 +98,7 @@ Trait Database {
         
         if (!Database::file($db_name)):
             Database::create($db_name, $model, $database['config']['encrypted'] ?? false);
-        elseif ($database['config']['encrypted'] !== Database::config($db_name)['encrypted']):
+        elseif ($database['config']['encrypted'] !== Database::config($db_name)['encrypted'] ?? false):
             $remove_old_file = true;
         else: $remove_old_file = false; endif;
 
@@ -146,7 +146,7 @@ Trait Database {
      * @return array|[] Databases files path
      */
     static public function files(): ?array {
-        $directory = rtrim(rtrim(Database::$databases_directory, '*'), '/').'/*';
+        $directory = rtrim(rtrim(Database::$databases_directory, '*'), '/').'/*';        
         return Filesystem::find($directory, ['yaml', 'yml', 'encrypted']) ?? [];
     }
 

@@ -33,19 +33,19 @@ Trait DatabaseQuery {
         return Database::persist($db_name, $database) ?? false;
     }
 
-    static public function remove(string $db_name, ?array $where = []): bool {
+    static public function remove(string $db_name, ?array $parameters = []): bool {
         foreach (Database::rows($db_name) as $row):
             $remove = true;
-            if (!empty($where)):
+            if (!empty($parameters)):
                 $remove = false;
-                foreach ($where as $key => $value):
+                foreach ($parameters as $key => $value):
                     if (!empty($row[$key]) && $row[$key] == $value):
                         $remove = true;
                     endif;
                 endforeach;
-                if ($remove === false):
-                    $rows[] = $row;
-                endif;
+            endif;
+            if ($remove === false):
+                $rows[] = $row;
             endif;
         endforeach;
 
@@ -65,10 +65,10 @@ Trait DatabaseQuery {
                         $excluded = false;
                     else: $excluded = true; endif;
                 endforeach;
-                if ($excluded === false):
-                    if ($parsed): return Table::arrayOneLine($row);
-                    else: return $row; endif;
-                endif;
+            endif;
+            if ($excluded === false):
+                if ($parsed): return Table::arrayOneLine($row);
+                else: return $row; endif;
             endif;
         endforeach;
 

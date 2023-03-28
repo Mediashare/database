@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "kzu/filesystem",
-            "version": "0.0.5",
+            "version": "0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mediashare/filesystem.git",
-                "reference": "91bc897678876e529837747e5e32610f8eacc851"
+                "reference": "b82000540aee6f108419db31d94d91c87e3c3c9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mediashare/filesystem/zipball/91bc897678876e529837747e5e32610f8eacc851",
-                "reference": "91bc897678876e529837747e5e32610f8eacc851",
+                "url": "https://api.github.com/repos/Mediashare/filesystem/zipball/b82000540aee6f108419db31d94d91c87e3c3c9e",
+                "reference": "b82000540aee6f108419db31d94d91c87e3c3c9e",
                 "shasum": ""
             },
             "require": {
@@ -38,22 +38,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Mediashare/filesystem/issues",
-                "source": "https://github.com/Mediashare/filesystem/tree/0.0.5"
+                "source": "https://github.com/Mediashare/filesystem/tree/0.0.6"
             },
-            "time": "2023-03-16T09:57:20+00:00"
+            "time": "2023-03-28T14:05:10+00:00"
         },
         {
             "name": "kzu/normalizer",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mediashare/normalizer.git",
-                "reference": "8770fd37f31ae4323a7953a0acd07a0cb1542565"
+                "reference": "1f2f94ea0245ba630d49eac8ab1e15fd5c64f707"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mediashare/normalizer/zipball/8770fd37f31ae4323a7953a0acd07a0cb1542565",
-                "reference": "8770fd37f31ae4323a7953a0acd07a0cb1542565",
+                "url": "https://api.github.com/repos/Mediashare/normalizer/zipball/1f2f94ea0245ba630d49eac8ab1e15fd5c64f707",
+                "reference": "1f2f94ea0245ba630d49eac8ab1e15fd5c64f707",
                 "shasum": ""
             },
             "require": {
@@ -74,22 +74,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Mediashare/normalizer/issues",
-                "source": "https://github.com/Mediashare/normalizer/tree/0.0.2"
+                "source": "https://github.com/Mediashare/normalizer/tree/0.0.3"
             },
-            "time": "2021-05-17T19:22:31+00:00"
+            "time": "2023-03-28T14:07:22+00:00"
         },
         {
             "name": "kzu/security",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mediashare/security.git",
-                "reference": "70ff07b2a9e469fbfcc5174a31a73eab514e47c0"
+                "reference": "9c4280f2b4b1514f1b29b545189c84e6ca7af449"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mediashare/security/zipball/70ff07b2a9e469fbfcc5174a31a73eab514e47c0",
-                "reference": "70ff07b2a9e469fbfcc5174a31a73eab514e47c0",
+                "url": "https://api.github.com/repos/Mediashare/security/zipball/9c4280f2b4b1514f1b29b545189c84e6ca7af449",
+                "reference": "9c4280f2b4b1514f1b29b545189c84e6ca7af449",
                 "shasum": ""
             },
             "require": {
@@ -113,9 +113,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Mediashare/security/issues",
-                "source": "https://github.com/Mediashare/security/tree/0.0.4"
+                "source": "https://github.com/Mediashare/security/tree/0.0.5"
             },
-            "time": "2021-05-17T19:26:05+00:00"
+            "time": "2023-03-28T14:03:14+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
